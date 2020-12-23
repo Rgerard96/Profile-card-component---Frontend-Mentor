@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(185, 75%, 39%);
+  position: relative;
+}
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-circle{
+  height: 600px;
+  width: 600px;
+  background: url(./images/bg-pattern-top.svg);
+  background-size: cover;
+  position: absolute;
+  top: -300px;
+  left: -20px;
+}
+.bottom-circle{
+  height: 800px;
+  width: 800px;
+  background: url(./images/bg-pattern-bottom.svg);
+  background-size: cover;
+  position: absolute;
+  bottom: -500px;
+  right: -200px;
+}
+
+.card{
+  height: 375px;
+  width: 350px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 5px 10px 25px hsla(229, 23%, 23%, 0.315);
+  z-index: 1;
+}
+
+.card-top{
+  height: 40%;
+  background: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+}
+
+.card-bottom{
+  height: 63%;
+  position: relative;
+  text-align: center;
+}
+
+.profile-img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 5;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  border: 5px solid white;
+  border-radius: 50%;
+  background: url(./images/image-victor.jpg);
+  background-size: cover;
+}
+
+.info{
+  padding: 75px 0 25px;
+}
+
+.info > p:nth-child(1) span{
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+.info > p:nth-child(2){
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.social{
+  height: 30%;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+.social > div >p:nth-child(1){
+  font-weight: 700;
+}
+
+.social > div >p:nth-child(2){
+  margin-top: 7px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 20px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 1600px){
+  .top-circle{
+    height: 900px;
+    width: 900px;
+    background: url(./images/bg-pattern-top.svg);
+    background-size: cover;
+    position: absolute;
+    top: -300px;
+    left: -20px;
+  }
+  .bottom-circle{
+    height: 1100px;
+    width: 1100px;
+    background: url(./images/bg-pattern-bottom.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: -500px;
+    right: -100px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .top-circle{
+    height: 600px;
+    width: 600px;
+    background: url(./images/bg-pattern-top.svg);
+    background-size: cover;
+    position: absolute;
+    top: -300px;
+    left: -350px;
+  }
+  .bottom-circle{
+    height: 500px;
+    width: 500px;
+    background: url(./images/bg-pattern-bottom.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: -200px;
+    right: -250px;
+  }
+}
